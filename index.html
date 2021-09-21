@@ -326,16 +326,13 @@
 </footer>
 <script src=main.js>
 </script>
-<script>document.querySelector(".trigger").addEventListener("click",function(e){
-    e.preventDefault()}
-                                                           )
-
-}
-
-document.querySelectorAll("ul.menu li a").addEventListener("click",function(e){
-    document.querySelector("ul.menu").classList.remove("active");
+<script>document.querySelector(".trigger").addEventListener("click", function(e) {
+e.preventdefault();
+});
 
 
-
+document.querySelector("ul.menu li a").addEventListener("click", function() {
+document.querySelector("ul.menu").classList.remove("active");
+});
 </script>
 </body>
