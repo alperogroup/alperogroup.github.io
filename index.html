@@ -329,10 +329,12 @@
 <script>document.querySelector(".trigger").addEventListener("click",function(e){
     e.preventDefault()}
                                                            )
-document.querySelectorAll("ul.menu li a").addEventListener("click",function(e){
-    document.querySelectorAll("ul.menu").classList.remove("active");
 
 }
+
+document.querySelectorAll("ul.menu li a").addEventListener("click",function(e){
+    document.querySelector("ul.menu").classList.remove("active");
+
 
 
 </script>
