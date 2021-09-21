@@ -330,8 +330,17 @@
     <script>
     document.querySelector(".trigger").addEventListener("click", function(e) {
         e.preventdefault()
-    }), document.querySelectorAll("ul.menu li a").addEventListener("click", function() {
-        document.querySelector("ul.menu").classList.remove("active");
-        document.querySelector(".trigger").classList.remove("active");
-    })
+    }), 
+      
+      
+const menuitem = document.querySelectorAll("ul.menu li a");
+
+ for (let i = 0; i < menuitem.length; i++) {
+     menuitem[i].addEventListener("click", function() {
+      
+       document.querySelector("ul.menu").classList.remove("active");
+       document.querySelector(".trigger").classList.remove("active");
+     });
+ }
+    
 </script>
